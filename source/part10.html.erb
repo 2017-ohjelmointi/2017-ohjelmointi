@@ -1132,7 +1132,8 @@ Olli
 Henkilo olli = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki");
 olli.opintopisteita();        // EI TOIMI!
 olli.opiskele();              // EI TOIMI!
-String.out.println(olli);   // olli.toString() TOIMII
+olli.toString();              // EI TOIMI
+System.out.println(olli);     // TOIMII
 <% end %>
 
 <p>
@@ -1149,14 +1150,14 @@ String.out.println(olli);   // olli.toString() TOIMII
 
 <% partial 'partials/code_highlight' do %>
 Opiskelija olli = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki");
-String.out.println(olli);
+System.out.println(olli);
 Henkilo olliHenkilo = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki")
 System.out.println(olliHenkilo);
 Object olliObject = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki")
 System.out.println(olliObject);
 
 Object liisa = new Opiskelija("Liisa", "Väinö Auerin katu 20 00500 Helsinki");
-String.out.println(liisa);
+System.out.println(liisa);
 <% end %>
 
 <% partial 'partials/sample_output' do %>
